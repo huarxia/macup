@@ -13,8 +13,9 @@ if (!brew) {
     return;
 } else {
     console.log(chalk.green('本机已安装 brew 😀, 软件安装列表如下'));
-    let brewList = exec('brew list').stdout;
+    let brewList = exec('brew list').stdout.split('\n');
     console.log('-------------------------');
+    console.log(brewList);
 }
 
 // brew cask is installed？
@@ -25,8 +26,9 @@ if (!brewCask) {
     console.log(chalk.green('请复制运行：') + chalk.yellow('brew install cask'));
 } else {
     console.log(chalk.green('本机已安装 brew cask 😀, 软件安装列表如下'));
-    let caskList = exec('brew cask list').stdout;
+    let caskList = exec('brew cask list').stdout.split('\n');
     console.log('-------------------------');
+    console.log(caskList);
 }
 
 // brew cask is installed？
@@ -37,6 +39,7 @@ if (!mas) {
     console.log(chalk.green('请复制运行：') + chalk.yellow('brew install mas'));
 } else {
     console.log(chalk.green('本机已安装 mas 😀, 软件安装列表如下'));
-    let caskList = exec('mas list').stdout;
+    let masList = exec('mas list').stdout.split('\n');
     console.log('-------------------------');
+    console.log(masList);
 }
