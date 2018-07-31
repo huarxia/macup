@@ -43,3 +43,11 @@ if (!mas) {
     console.log('-------------------------');
     console.log(masList);
 }
+
+var request = require('request');
+request.post('https://api.github.com/users/huarxia/gists', (error, res, body) => {
+    console.log(error, res.statusCode, body);
+    if (!error && res.statusCode == 200) {
+        console.log(res)
+    }
+});
