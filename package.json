@@ -1,0 +1,31 @@
+{
+  "name": "macup",
+  "version": "1.0.0",
+  "description": "Backup Mac computer software",
+  "bin": {
+    "macup": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huarxia/macup.git"
+  },
+  "keywords": [
+    "mac",
+    "soft",
+    "backup"
+  ],
+  "author": "huarxia",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/huarxia/macup/issues"
+  },
+  "homepage": "https://github.com/huarxia/macup#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "shelljs": "^0.8.2"
+  }
+}
